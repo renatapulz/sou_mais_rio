@@ -15,7 +15,7 @@ header{
   background: linear-gradient(90deg, rgba(9,147,243,1) 40%, rgb(51, 162, 236) 78%);
   position: fixed;
 
-  /* z-index: 10; */
+   z-index: 10;
 }
 
 /* div criada para "amarrar" todo o header  */
@@ -370,3 +370,21 @@ footer{
 
 
 
+
+
+.imagensprincipal .card{
+  position:relative;
+  height:400px;
+  background:#fff;
+  display:flex;
+  width:30%;
+  margin:10px ;
+  padding:10px;
+}
+
+
+.card .imgs{
+  position:absolute;
+  top:0;
+	left:0;
+}
