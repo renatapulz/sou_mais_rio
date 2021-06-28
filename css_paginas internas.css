@@ -120,6 +120,33 @@ nav ul li a {
 
 }
 
+/* PÁGINA DE SERVIÇOS: */
+/* Título usado na página de serviços */
+.titulo1{
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+/* espaço para as images da página de serviços */
+.secaointerna2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.secaointerna2 img{
+  padding: 10px;
+}
+
+legend{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
 @media (max-width: 1000px) {
   .secaointerna {
     flex-direction: column;
