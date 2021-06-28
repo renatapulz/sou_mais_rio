@@ -17,10 +17,12 @@ header{
 
 }
 
+/* div criada para "amarrar" todo o header  */
 .topo{
   display: flex;
 }
 
+/* espaço destinado para a logomarca */
 .logo{
   margin: 20px 0;
 }
@@ -37,10 +39,22 @@ header .logo img {
   margin: 0 auto;
 }
 
+/* botão buscar na header */
+.busca{
+  display: flex;
+  margin-top: 110px;
+  margin-left: 80px;
+  padding: 5px;
+} 
+
+#txtBusca{
+  height: 15px;
+  margin-left: 5px;
+  width: 200px;
+}
+
 /* navegação - links */
 nav {
-  background: rgb(9,147,243);
-  background: linear-gradient(90deg, rgba(9,147,243,1) 40%, rgb(51, 162, 236) 78%);
   display: flex;
   flex-direction: row;
   align-items: center;
