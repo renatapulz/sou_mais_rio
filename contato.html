@@ -1,55 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sou_mais_rio_css.css">
     <title>Contato</title>
+    <style>
+        body{
+            
+        }
+        #divcontato{
+            
+            display:flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            
+            
+        }
+        .cont1{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+
+        }
+        .cont2{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+    </style>
+
 </head>
 <body>
-  <div id="todo">
-    <header>
-      <div class="centralizar">
-        <div class="topo">
-          <div class="logo"><img src="img/logo.jpg" alt="Logo Sou Mais Rio"></div>
-          <nav>
-            <ul>
-              <li><a href="sou_mais_rio.html">Home</a></li>
-              <li><a href="quem_somos.html">Quem Somos</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="servicos.html">Serviços</a></li>
-              <li><a href="">Contato</a></li>
-            </ul>
-          </nav>
-          <div class="busca">
-            <label for="txtBusca"><img width="25px" height="20px" src="img/lupa.png" id="btnBusca" alt="Buscar"/></label>
-		        <input type="text" id="txtBusca" name="txtBusca" placeholder="Buscar..."/>    
-          </div>
-        </div> 
-      </div>   
-    </header>
-    <main>
-      <article class="conteudointernas">
-        <div class="centralizar">
-          <div class="secaointerna">
-            <div class="texto-secaointerna">
-              <h1>Contato</h1>
-              <p>Este espaço fica dentro do prório Hotel, interligado ao restaurante e com fácil acesso através dos elevadores. Uma excelente área para a realização do seu evento, com capacidade máxima para 200 pessoas.</p>
-              <p>Aqui você encontra a estrutura completa para realizar seu evento. Garanta conforto, segurança, tecnologia, ótima gastronomia e profissionais capacitados para atingir seus objetivos.</p>
-            </div>
-            <div class="imagemsecaointerna"><img src="img/frota.jpg"></div>
-          </div>  
-        </div>
-      </article>
-    </main>
-    <footer>
-      <div class="centralizar">
-        <div class="textofoot">
-          <p>Aluna: Renata Pulz</p>
-        </div>
-      </div>
-    </footer>
-  </div> 
+    <div id="divcontato">
+        <section class="cont1">
+            
+            <h1>CONTATO</h1>
+            <h2>É muito bom ter você aqui!</h2>
+            <h3>Faltou ainda alguma informação sobre a Sou Mais Rio que você não encontrou em nosso site? Quer saber como solicitar uma proposta ou convidar
+                a Sou Mais Rio para participar de novas rotas e destinos?
+                Preencha o formulário e envie-nos sua solicitação. Temos certeza que já nesse primeiro contato nossa equipe irá te surpreender!
+                <br>
+                Nossos Telefones:</h3>
+            <p>Fone (21) 9999-9999</p>
+            <p>Whats (21) 98888-8888</p>
+        </section>
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.5359548217334!2d-43.18114278577623!3d-22.967311084981024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5540e4f928d%3A0xef2e5118ccad88ae!2sCopacabana%20Palace%2C%20A%20Belmond%20Hotel%2C%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1624904810079!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>    
+        <article class="cont2">
+            <hr>
+            <form>
+                <h2>FALE CONOSCO</h2>
+                <p>Preencha o formulário abaixo:</p>
+                <div>     
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" size="50"> 
+                </div><br> 
+                
+                <div>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" placeholder="exemplo@gmail.com" id="email" size="50">
+                </div><br>
+                <div>
+                    <label for="tel">Telefone:</label><br>
+                    <input type="tel" id="tel" name="Telefone" pattern= "[0-9]{3}-[0-9]{9}" maxlength="11" size="50">                           
+                </div><br>
+                  
+                <div>
+                    <label for="msg"><strong>Digite sua mensagem:</strong></label><br>
+                    <textarea id="msg" rows="5" cols="40" maxlength="500"></textarea>
+                </div>
+                <div class="button"><br>
+                    <button type="submit">ENVIAR</button> 
+                </div>
+            </form>
+       </article>
+    </div>
+    
+    
+            
+
+
+
+
+    
 </body>
 </html>
