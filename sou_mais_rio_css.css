@@ -14,28 +14,21 @@ header{
   background: rgb(9,147,243);
   background: linear-gradient(90deg, rgba(9,147,243,1) 40%, rgb(51, 162, 236) 78%);
   position: fixed;
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  height: 150px;
-  align-items: center;
+
 }
-/* comandos logomarca */
-header .logo img {
-  width: 100px;
-  height: 110px;
-  margin:10px;
-  justify-content: center;
-  
+
+.topo{
+  display: flex;
+}
+
+.logo{
+  margin: 20px 0;
 }
 
 /* comandos logomarca imagem*/
-/* header .logo img {
-  display: block;
-  width: 130px;
-  border-radius: 5%; */
-  
-
+header .logo img {
+  width: 110px;
+  border-radius: 12%;
 }
 
 /* comando que vai centralizar tudo*/
@@ -49,7 +42,9 @@ nav {
   background: rgb(9,147,243);
   background: linear-gradient(90deg, rgba(9,147,243,1) 40%, rgb(51, 162, 236) 78%);
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 100px;
 }
 
 nav ul {
