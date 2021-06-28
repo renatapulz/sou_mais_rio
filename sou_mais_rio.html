@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sou_mais_rio_css.css">
-    <title>Exercício Flexbox</title>
+    <title>Sou Mais Rio</title>
 </head>
+
 <body>
   <div id="todo">
     <header>
@@ -15,10 +17,10 @@
           <div class="logo"><img src="img/logo.jpg" alt="Logo Sou Mais Rio"></div>
           <nav>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Quem Somos</a></li>
-              <li><a href="">Produtos</a></li>
-              <li><a href="">Serviços</a></li>
+              <li><a href="sou_mais_rio.html">Home</a></li>
+              <li><a href="quem_somos.html">Quem Somos</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
               <li><a href="">Contato</a></li>
             </ul>
           </nav>
@@ -30,16 +32,52 @@
       </div>   
     </header>
     <main>
+
+
       <section class="primeira" id="home">
         <div class="centralizar">
-          <div class="fachada"></div>
+          <div class="fachada">
+            <input type="radio" name="carousel" id="carousel1" checked="checked" />
+            <input type="radio" name="carousel" id="carousel2" />
+            <input type="radio" name="carousel" id="carousel3" />
+            <input type="radio" name="carousel" id="carousel4" />
+
+            <div class="carousel__stage">
+              <aside class="carousel__item">
+                <img class="carousel__image" src="img/carro1.PNG" />
+                <label for="carousel2" class="carousel__next carousel__control"></label>
+              </aside>
+
+              <aside class="carousel__item">
+                <label for="carousel1" class="carousel__prev carousel__control"></label>
+                <img class="carousel__image" src="img/carro2.PNG" />
+                <label for="carousel3" class="carousel__next carousel__control"></label>
+              </aside>
+
+              <aside class="carousel__item">
+                <label for="carousel2" class="carousel__prev carousel__control"></label>
+                <img class="carousel__image" src="img/carro3.PNG" />
+                <label for="carousel4" class="carousel__next carousel__control"></label>
+              </aside>
+
+              <aside class="carousel__item">
+                <label for="carousel3" class="carousel__prev carousel__control"></label>
+                <img class="carousel__image" src="img/carro4.PNG" />
+              </aside>
+
+            </div>
+          </div>
         </div>
       </section>
-      <article  id="acomod">
+
+
+
+
+      <article id="acomod">
         <div class="centralizar">
           <div class="titulo1">Nossos Passeios</div>
-          
-            <div class="imagensprincipal">
+
+          <div class="imagensprincipal">
             <div class="imgs"><img src="img/rio-de-janeiro-809756_1920.jpg"></div>
             <div class="imgs"><img src="img/Pedra_do_Telegrafo.jpg"></div>
             <div class="imgs"><img src="img/Asa_Delta.jpg"></div>
@@ -61,17 +99,20 @@
               </div>
           </div>  
         </div>
-      </article>      
+      </article>
       <article class="secao2">
         <div class="centralizar">
           <div class="secao">
             <div class="texto-secao">
               <h1 id="epv">Espaço para festas</h1>
-              <p>Este espaço fica dentro do prório Hotel, interligado ao restaurante e com fácil acesso através dos elevadores. Uma excelente área para a realização do seu evento, com capacidade máxima para 200 pessoas.</p>
-              <p>Aqui você encontra a estrutura completa para realizar seu evento. Garanta conforto, segurança, tecnologia, ótima gastronomia e profissionais capacitados para atingir seus objetivos.</p>
+              <p>Este espaço fica dentro do prório Hotel, interligado ao restaurante e com fácil acesso através dos
+                elevadores. Uma excelente área para a realização do seu evento, com capacidade máxima para 200 pessoas.
+              </p>
+              <p>Aqui você encontra a estrutura completa para realizar seu evento. Garanta conforto, segurança,
+                tecnologia, ótima gastronomia e profissionais capacitados para atingir seus objetivos.</p>
             </div>
             <div class="imagemsecao"><img src="img/auditorio.jpg"></div>
-          </div>  
+          </div>
         </div>
       </article>
     </main>
@@ -82,6 +123,7 @@
         </div>
       </div>
     </footer>
-  </div> 
+  </div>
 </body>
+
 </html>
