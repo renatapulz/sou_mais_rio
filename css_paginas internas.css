@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+#todo {
+  margin: 0;
+  padding: 0;
+  width: 100%
+}
+
+header{
+  width: 100%;
+  background: rgb(255,165,0);
+  background: linear-gradient(90deg, rgba(255,165,0,1) 40%, rgba(255,188,64,1) 78%);
+}
+
+/* div criada para "amarrar" todo o header  */
+.topo{
+  display: flex;
+}
+
+/* espaço destinado para a logomarca */
+.logo{
+  margin: 20px 0;
+}
+
+/* comandos logomarca imagem*/
+header .logo img {
+  width: 110px;
+  border-radius: 12%;
+}
+
+/* comando que vai centralizar tudo*/
+.centralizar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* botão buscar na header */
+.busca{
+  display: flex;
+  margin-top: 110px;
+  margin-left: 80px;
+  padding: 5px;
+} 
+
+#txtBusca{
+  height: 15px;
+  margin-left: 5px;
+  width: 200px;
+}
+
+/* navegação - links */
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 100px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+/* conteudo página internas */
+.conteudointernas{
+  padding: 10px;
+}
+
+.secaointerna{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.secaointerna h1{
+  text-align:center;
+  margin: 25px;
+  font-size: 30px;
+}
+
+.texto-secaointerna {
+  margin: 20px;
+  font: 12.5pt Arial ;
+  width: 65%;
+}
+
+.imagemsecaointerna {
+  margin-left: 10px;
+  width: 35%;
+}
+
+.imagemsecaointerna img {
+  width: 250px;
+}
+
+@media (max-width: 1000px) {
+  .secaointerna {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav {
+    padding: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  nav ul li {
+    line-height: 17px;
+    padding: 5px 0;
+  }
+
+  nav ul li a {
+    font-size: 17px;
+  }
+
+  .topo{
+    flex-direction:column;
+    align-items: center;
+    max-height: none;
+  }
+
+  header .logo img {
+    height: 60px;
+    width: auto;
+  }
+
+  .busca{
+    display: none;
+  }
+
+  .conteudointernas{
+    padding: 0;
+  }
+
+  .texto-secaointerna {
+    width: auto;
+  }
+
+  .imagemsecaointerna {
+    width: auto;
+    margin: 0;
+    padding: 15px;
+  }
+}

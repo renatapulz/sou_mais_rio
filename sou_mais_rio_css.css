@@ -11,11 +11,10 @@
 
 header{
   width: 100%;
-  background: rgb(9,147,243);
-  background: linear-gradient(90deg, rgba(9,147,243,1) 40%, rgb(51, 162, 236) 78%);
+  background: rgb(255,165,0);
+  background: linear-gradient(90deg, rgba(255,165,0,1) 40%, rgba(255,188,64,1) 78%);
   position: fixed;
-
-  /* z-index: 10; */
+  z-index: 10;
 }
 
 /* div criada para "amarrar" todo o header  */
@@ -94,10 +93,6 @@ nav ul li a {
   height: 450px;
 
 }  */
-
-
-
-
 
 
 /* seção imagens principal */
@@ -180,14 +175,31 @@ article.secao2{
   padding: 10px;
   align-items: center;
   justify-content: center;
-  height: 400px;
-}
 
+}
 
 .secaointerna h1{
   text-align:left;
-  margin: 30px;
+  margin: 25px;
   font-size: 30px;
+}
+
+.texto-secaointerna{
+  margin:20px;
+  font: 12.5pt Arial ;
+
+}
+
+.imagemsecaointerna{
+  height: 180px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .secaointerna {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
 /* footer */
@@ -227,8 +239,7 @@ footer{
  primeira seção, imagem grande - carrocel */
 
 .primeira{  
-  background-color: lightskyblue;
-  background-image: linear-gradient(to top, transparent, rgba(47, 20, 79,0.5));
+  background-color:white;
 }
 
 .primeira .fachada{
