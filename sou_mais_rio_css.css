@@ -11,16 +11,18 @@
 
 header{
   width: 100%;
-  background: rgb(9,147,243);
-  background: linear-gradient(90deg, rgba(9,147,243,1) 40%, rgb(51, 162, 236) 78%);
+  background: rgb(255,165,0);
+  background: linear-gradient(90deg, rgba(255,165,0,1) 40%, rgba(255,188,64,1) 78%);
   position: fixed;
-
+  z-index: 10;
 }
 
+/* div criada para "amarrar" todo o header  */
 .topo{
   display: flex;
 }
 
+/* espaço destinado para a logomarca */
 .logo{
   margin: 20px 0;
 }
@@ -37,10 +39,22 @@ header .logo img {
   margin: 0 auto;
 }
 
+/* botão buscar na header */
+.busca{
+  display: flex;
+  margin-top: 110px;
+  margin-left: 80px;
+  padding: 5px;
+} 
+
+#txtBusca{
+  height: 15px;
+  margin-left: 5px;
+  width: 200px;
+}
+
 /* navegação - links */
 nav {
-  background: rgb(9,147,243);
-  background: linear-gradient(90deg, rgba(9,147,243,1) 40%, rgb(51, 162, 236) 78%);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -65,7 +79,9 @@ nav ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* primeira seção, imagem grande */
+
+
+ /* primeira seção, imagem grande - carrocel
 .primeira{
   background-color: rgb(219, 227, 230);
 }
@@ -76,14 +92,13 @@ nav ul li a {
   background-position: center bottom;
   height: 450px;
 
-}
+}  */
 
 
 /* seção imagens principal */
 article{
   background-color: #f1eded;
   padding: 20px;
-
 
 }
 
@@ -109,7 +124,7 @@ article .titulo1{
   
 }
 
-/* seção quem somos / espaço para eventos (secao2) */
+/* Seção quem somos / Transfer (secao2) */
 article.secaofora{
   background-color: rgb(219, 227, 230);
 }
@@ -148,11 +163,50 @@ article.secao2{
   padding: 10px;
 }
 
+/* conteudo página internas */
+.conteudointernas{
+  padding-top: 140px;
+}
+
+.secaointerna{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.secaointerna h1{
+  text-align:left;
+  margin: 25px;
+  font-size: 30px;
+}
+
+.texto-secaointerna{
+  margin:20px;
+  font: 12.5pt Arial ;
+
+}
+
+.imagemsecaointerna{
+  height: 180px;
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .secaointerna {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
 /* footer */
 footer{
   width: 100%;
-  background: rgb(9,147,243);
-  background: linear-gradient(90deg, rgba(9,147,243,1) 40%, rgb(51, 162, 236) 78%);
+  background: rgb(255,165,0);
+  background: linear-gradient(90deg, rgba(255,165,0,1) 40%, rgba(255,188,64,1) 78%);
   margin: 10px;
 }
 
@@ -161,7 +215,7 @@ footer{
   flex-direction: row;
   /* flex-wrap: wrap; */
   justify-content: center;
-  margin-bottom: ;
+  /* margin-bottom: ; */
 
 
 }
