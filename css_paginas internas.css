@@ -51,7 +51,7 @@ header .logo img {
 } 
 
 #txtBusca{
-  height: 15px;
+  height: 20px;
   margin-left: 5px;
   width: 200px;
 }
@@ -82,9 +82,6 @@ nav ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-
 /* conteudo página internas */
 .conteudointernas{
   padding: 10px;
@@ -114,11 +111,13 @@ nav ul li a {
 
 .imagemsecaointerna {
   margin-left: 10px;
+  margin-top: 50px;
   width: 35%;
 }
 
 .imagemsecaointerna img {
-  width: 250px;
+  width: 100%;
+
 }
 
 @media (max-width: 1000px) {
