@@ -210,10 +210,11 @@ legend{
   box-shadow: 10px 10px 10px rgb(90, 82, 82);
   margin-left: 20px;
   margin-top: 10px;
-  background-color: rgb(235, 227, 215);      
+  background-color: rgb(230, 229, 227);      
 }
 .imgmapa{
   display: flex;
   justify-content: center;
-  width: 25%;  
+  width: 25%; 
+  margin-top: 100px; 
 }
