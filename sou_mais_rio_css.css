@@ -563,3 +563,51 @@ footer .copyright {
     margin-top: 30px;
   }
 }
+
+.foo {
+  list-style: none;
+  float: left;
+  position: relative;   
+  margin-right: 100px;
+  top: 0; 
+  
+}
+
+.foo li{
+  position: relative;
+  float:left;
+ 
+}
+
+.foo li a{
+  color: fff;
+  text-decoration: none;
+  padding: 2px 5px;
+  font-size: 15px;
+  display: block;
+ 
+  
+}
+
+.foo li a:hover {
+  color: #333535;
+
+}
+
+.foo li ul{
+  position: absolute;
+  top:-40px;
+  margin-left: 200px;
+  left: 0;
+  display: none;
+}
+
+.foo li:hover ul,
+.foo li.over ul {
+  display: block;
+}
+
+.foo li ul li{
+  display: block;
+  width: 580px;
+}

@@ -221,58 +221,106 @@ legend{
 }
 
 /* footer */
-footer{
-  width: 100%;
+/* footer */
+footer {
   background: rgb(255,165,0);
   background: linear-gradient(90deg, rgba(255,165,0,1) 40%, rgba(255,188,64,1) 78%);
-  /* margin: 10px; */
 }
 
+.footer-logo {
+  margin-right: 10px;
+}
 
+.footer-logo img {
+  width: 40px;
+  height: auto;
+  border-radius: 10px;
+}
 
-.footerimglogo{
-  border-radius: 5px 10px 5px 10px;
-  width: 50px;
-  height: 50px;
-  margin-bottom: -35px;
- 
+.footer-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+}
+
+footer .midias ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+footer .midias ul li {
+  margin-left: 10px;
+}
+
+footer .midias h3 {
+  font-size: 19px;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+footer .midias ul li:first-child {
+  margin-left: 0;
+}
+
+footer .midias img {
+  width: 40px;
+}
+
+footer .desenvolvido h3 {
+  color: #FFF;
+}
+
+footer .desenvolvido ul {
+  list-style: none;
+}
+
+footer .desenvolvido li {
+  font-size: 17px;
+  line-height: 23px;
+}
+
+footer .desenvolvido a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  font-size: 17px;
+  margin-top: 30px;
+  padding: 20px 0;
+  border-top: 1px solid #FFF;
+}
+
+@media(max-width: 1200px) {
+  footer {
+    padding: 0 20px;
+  }
+}
+
+@media(max-width: 500px) {
+  .footer-topo {
+    flex-direction: column;
   }
 
-
-.redeimg{
-  /* align-items: center; */
-  height: 40px;
-  width: 40px;
-  margin-left: 10px;
-
-
-} 
-
-
- .redes{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  padding: 20px;
- margin-top: 500px; 
+  .footer-topo .desenvolvido {
+    margin-top: 30px;
+  }
 }
 
-
-.textofoot{
-text-align: center;
-text-decoration: none;
-font-size: 20px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: white;
-padding: 20px;
-} 
-
 .foo {
-  margin-left: 700px;
   list-style: none;
   float: left;
-  position: relative;    
-  top: 0;
- 
+  position: relative;   
+  margin-right: 100px;
+  top: 0; 
   
 }
 
@@ -288,6 +336,7 @@ padding: 20px;
   padding: 2px 5px;
   font-size: 15px;
   display: block;
+ 
   
 }
 
@@ -299,6 +348,7 @@ padding: 20px;
 .foo li ul{
   position: absolute;
   top:-40px;
+  margin-left: 200px;
   left: 0;
   display: none;
 }
@@ -309,16 +359,6 @@ padding: 20px;
 }
 
 .foo li ul li{
-
   display: block;
-  width: 600px;
+  width: 580px;
 }
-
-.textofoot1{
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  padding: 20px;
-  } 
