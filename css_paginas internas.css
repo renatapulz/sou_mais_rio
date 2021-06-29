@@ -239,7 +239,7 @@ footer {
 
 .footer-topo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 25px;
 }
@@ -268,6 +268,29 @@ footer .midias ul li:first-child {
 footer .midias img {
   width: 40px;
 }
+
+footer .links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+footer .links ul li {
+  margin-left: 30px;
+  
+}
+
+footer .links h3 {
+  font-size: 19px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+
+footer .links ul li:first-child {
+  margin-left: 0;
+}
+
 
 footer .desenvolvido h3 {
   color: #FFF;
@@ -319,8 +342,9 @@ footer .copyright {
   list-style: none;
   float: left;
   position: relative;   
-  margin-right: 100px;
+  margin-right: 80px;
   top: 0; 
+  
   
 }
 
@@ -334,7 +358,7 @@ footer .copyright {
   color: fff;
   text-decoration: none;
   padding: 2px 5px;
-  font-size: 15px;
+  font-size: 12px;
   display: block;
  
   
@@ -348,7 +372,7 @@ footer .copyright {
 .foo li ul{
   position: absolute;
   top:-40px;
-  margin-left: 200px;
+  margin-left: 180px;
   left: 0;
   display: none;
 }
