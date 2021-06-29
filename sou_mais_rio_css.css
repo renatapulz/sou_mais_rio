@@ -147,16 +147,6 @@ article.secaofora{
   height: 200px;
   padding: 20px;
 }
-.imagemsecaohome img {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 60px; 
-}
-#txttransfer{
-  padding-left: 30px;
-  text-align: justify;
-}
 
 .texto-secao{
   font-size: 17px;
