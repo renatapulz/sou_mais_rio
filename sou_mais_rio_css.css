@@ -102,7 +102,7 @@ nav ul li a {
 
 /* seção imagens principal */
 article{
-  background-color: #f1eded;
+  background-color: white;
   padding: 20px;
 
 }
@@ -386,8 +386,6 @@ article.secao2{
   font-family: 'Poppins', sans-serif;  
   color: blue;
 }	
-
-
 
 
 
