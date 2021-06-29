@@ -120,7 +120,34 @@ nav ul li a {
 
 }
 
-@media (max-width: 1000px) {
+/* PÁGINA DE SERVIÇOS: */
+/* Título usado na página de serviços */
+.titulo1{
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+}
+
+/* espaço para as images da página de serviços */
+.secaointerna2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.secaointerna2 img{
+  padding: 10px;
+}
+
+legend{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 1053px) {
   .secaointerna {
     flex-direction: column;
     align-items: center;
@@ -170,4 +197,207 @@ nav ul li a {
     margin: 0;
     padding: 15px;
   }
+}
+
+.formcontato{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgb(90, 82, 82);
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color: rgb(230, 229, 227);      
+}
+.imgmapa{
+  display: flex;
+  justify-content: center;
+  width: 25%; 
+  margin-top: 100px;
+  margin-bottom: 20px; 
+}
+
+/* footer */
+/* footer */
+footer {
+  background: rgb(255,165,0);
+  background: linear-gradient(90deg, rgba(255,165,0,1) 40%, rgba(255,188,64,1) 78%);
+}
+
+.footer-logo {
+  margin-right: 10px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer-topo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 25px;
+}
+
+footer .midias ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+footer .midias ul li {
+  margin-left: 10px;
+}
+
+footer .midias a:hover{
+  color: #333535;
+}
+
+footer .midias h3 {
+  font-size: 19px;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+footer .midias ul li:first-child {
+  margin-left: 0;
+}
+
+footer .midias img {
+  width: 40px;
+}
+
+footer .links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+footer .links ul li {
+  margin-left: 30px;
+  
+}
+
+footer .links h3 {
+  font-size: 19px;
+  color: #FFF;
+  margin-left: 180px;
+  margin-bottom: 20px;
+}
+
+footer .links a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer .links a:hover{
+  color: #333535;
+}
+
+footer .links ul li:first-child {
+  margin-left: 180px;
+ 
+}
+
+
+footer .desenvolvido h3 {
+  color: #FFF;
+}
+
+footer .desenvolvido ul {
+  list-style: none;
+}
+
+footer .desenvolvido li {
+  font-size: 17px;
+  line-height: 23px;
+}
+
+footer .desenvolvido a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  font-size: 17px;
+  margin-top: 30px;
+  padding: 20px 0;
+
+}
+
+@media(max-width: 1200px) {
+  footer {
+    padding: 0 20px;
+  }
+}
+
+@media(max-width: 500px) {
+  .footer-topo {
+    flex-direction: column;
+  }
+
+  .footer-topo .desenvolvido {
+    margin-top: 30px;
+  }
+}
+
+.foo {
+  list-style: none;
+  float: left;
+  position: relative;   
+  margin-right: 80px;
+  top: 0; 
+  
+  
+}
+
+.foo li{
+  position: relative;
+  float:left;
+ 
+}
+
+.foo li a{
+  color: fff;
+  text-decoration: none;
+  padding: 2px 5px;
+  font-size: 12px;
+  display: block;
+ 
+  
+}
+
+.foo li a:hover {
+  color: #333535;
+
+}
+
+.foo li ul{
+  position: absolute;
+  top:-40px;
+  margin-left: 180px;
+  left: 0;
+  display: none;
+}
+
+.foo li:hover ul,
+.foo li.over ul {
+  display: block;
+}
+
+.foo li ul li{
+  display: block;
+  width: 580px;
 }

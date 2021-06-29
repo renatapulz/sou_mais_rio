@@ -1,69 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <style>
-        body{
-            
-        }
-        #divcontato{
-            
-            display:flex;
-            flex-direction: row;
-            justify-content:space-around;
-            align-items: center;
-            
-            
-        }
-        .cont1{
-            width: 40%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 50px;
-
-        }
-        .cont2{
-            width: 40%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 50px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css_paginas internas.css">
+    <title>Quem Somos</title>
 </head>
 <body>
-    <div id="divcontato">
-        <section class="cont1">
-            
-            <h1>CONTATO</h1>
-            <h2>É muito bom ter você aqui!</h2>
-            <h3>Faltou ainda alguma informação sobre a Sou Mais Rio que você não encontrou em nosso site? Quer saber como solicitar uma proposta ou convidar
+  <div id="todo">
+    <header>
+      <div class="centralizar">
+        <div class="topo">
+          <div class="logo"><img src="img/logo.jpg" alt="Logo Sou Mais Rio"></div>
+          <nav>
+            <ul>
+              <li><a href="sou_mais_rio.html">Home</a></li>
+              <li><a href="quem_somos.html">Quem Somos</a></li>
+              <li><a href="servicos.html">Serviços</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="busca">
+            <label for="txtBusca"><img width="25px" height="20px" src="img/lupa.png" id="btnBusca" alt="Buscar"/></label>
+		        <input type="text" id="txtBusca" name="txtBusca" placeholder="Buscar..."/>    
+          </div>
+        </div> 
+      </div>   
+    </header>
+    <main>
+      <article class="conteudointernas">
+        <div class="centralizar">
+          <div class="secaointerna">
+            <div class="texto-secaointerna">
+              <h1>Contato</h1>
+              <h2>É muito bom ter você aqui!</h2><br>
+              <p style="margin-right: 50px;">Faltou ainda alguma informação sobre a Sou Mais Rio que você não encontrou em nosso site? Quer saber como solicitar uma proposta ou convidar
                 a Sou Mais Rio para participar de novas rotas e destinos?
                 Preencha o formulário e envie-nos sua solicitação. Temos certeza que já nesse primeiro contato nossa equipe irá te surpreender!
                 <br>
-                Nossos Telefones:</h3>
-            <p>Fone (21) 9999-9999</p>
-            <p>Whats (21) 98888-8888</p>
-        </section>
-        <section class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.5359548217334!2d-43.18114278577623!3d-22.967311084981024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5540e4f928d%3A0xef2e5118ccad88ae!2sCopacabana%20Palace%2C%20A%20Belmond%20Hotel%2C%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1624904810079!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-    </div>    
-        <article class="cont2">
-            <hr>
-            <form>
-                <h2>FALE CONOSCO</h2>
-                <p>Preencha o formulário abaixo:</p>
+                Nossos Telefones:</p><br>
+
+              <p>Fone (21) 9999-9999</p>
+              <p>Whats (21) 98888-8888</p>
+            </div>
+            <div class="imgmapa" ><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.5359548217334!2d-43.18114278577623!3d-22.967311084981024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5540e4f928d%3A0xef2e5118ccad88ae!2sCopacabana%20Palace%2C%20A%20Belmond%20Hotel%2C%20Rio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1624904810079!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>  
+        </div>
+      </article>
+      <article class="centralizar" >
+        <form >
+            <fieldset class="formcontato" >
+                <h2>FALE CONOSCO</h2><br>
+                <p><em>Preencha o formulário abaixo:</em></p><br>    
                 <div>     
                     <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" size="50"> 
+                    <input type="text" id="nome" size="50" placeholder="Digite seu nome aqui..."> 
                 </div><br> 
                 
                 <div>
@@ -72,9 +66,9 @@
                 </div><br>
                 <div>
                     <label for="tel">Telefone:</label><br>
-                    <input type="tel" id="tel" name="Telefone" pattern= "[0-9]{3}-[0-9]{9}" maxlength="11" size="50">                           
+                    <input type="tel" id="tel" name="Telefone" placeholder="(99) 99999-9999" pattern= "[0-9]{3}-[0-9]{9}" maxlength="11" size="50">                           
                 </div><br>
-                  
+                
                 <div>
                     <label for="msg"><strong>Digite sua mensagem:</strong></label><br>
                     <textarea id="msg" rows="5" cols="40" maxlength="500"></textarea>
@@ -82,16 +76,52 @@
                 <div class="button"><br>
                     <button type="submit">ENVIAR</button> 
                 </div>
-            </form>
-       </article>
-    </div>
-    
-    
-            
-
-
-
-
-    
+            </fieldset>
+        </form>
+   </article>
+    </main>
+  
+    <footer>
+      <div class="centralizar">
+        <div class="footer-topo">
+          <div class="midias">
+            <h3>Nossa Redes</h3> 
+            <ul>
+              <li><a href="https://www.instagram.com/soulcodeacademy/"><img src="img/instagram.jpg" alt="" class="redeimg"></a></li>
+              <li><a href="https://web.facebook.com/SoulCodeAcademy/?_rdc=1&_rdr"><img src="img/facebook1.png" alt="" class="redeimg"></a></li>
+              <li><a href="https://www.linkedin.com/company/soulcodeacademy/?originalSubdomain=br"><img src="img/linkedin.png" alt="" class="redeimg"></a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <h3>Links Interessantes</h3> 
+            <ul>
+              <li><a href="https://www.rio.rj.gov.br/web/riotur;jsessionid=048B701135652DE3F496E4C2F0321DC4.liferay-inst4">Rio Tur</a></li>
+              <li><a href="https://policia.net.br/sobre/deat-delegacia-especial-de-apoio-ao-turismo-rio-de-janeiro-rj">Delegacia Especia de Apoio ao Turismo</a></li>
+              <li><a href="https://www.guiadasemana.com.br/viagens-nacionais/galeria/50-coisas-que-voce-tem-que-fazer-no-rio-de-janeiro-pelo-menos-uma-vez-na-vida">Guia da Semana</a></li>
+            </ul>
+          </div>
+          <div class="desenvolvido">
+            <section>
+              <nav >
+                  <ul class="foo">
+                      <li><a href="#"> Desenvolvido por Squad 8</a>
+                          <ul>
+                            <li><a href="https://www.linkedin.com/in/renatas-matsumoto">Renata Matsumoto</a></li>
+                            <li><a href="https://www.linkedin.com/in/renata-pulz-781aa2191/">Renata Putz</a></li>
+                            <li><a href="https://www.linkedin.com/in/ronaldofagundes">Ronaldo Fagundes</a></li>
+                            <li><a href="https://www.linkedin.com/in/vagner-bruno-batista-83238992/">Vagner Bruno</a></li>
+                          </ul>
+                      </li>  
+                    </ul>                
+              </nav>
+            </section>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="footer-logo"><img src="img/logo.jpg" alt="" class="footerimglogo"></div>
+        <p>Copyright<span>&#169</span> 2021 - Sou + Rio</p>
+      </div>
+    </footer>
+  </div> 
 </body>
 </html>
