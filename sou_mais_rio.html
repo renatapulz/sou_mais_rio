@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sou_mais_rio_css.css">
-    <title>Sou Mais Rio</title>
+    <title>Exercício Flexbox</title>
 </head>
-
 <body>
   <div id="todo">
     <header>
@@ -17,211 +15,69 @@
           <div class="logo"><img src="img/logo.jpg" alt="Logo Sou Mais Rio"></div>
           <nav>
             <ul>
-              <li><a href="sou_mais_rio.html">Home</a></li>
-              <li><a href="quem_somos.html">Quem Somos</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="servicos.html">Serviços</a></li>
-              <li><a href="">Contato</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#acomod">Acomodações</a></li>
+              <li><a href="#qs">Quem Somos</a></li>
+              <li><a href="#epv">Espaço para Eventos</a></li>
+              <li><a href="#">Contato</a></li>
             </ul>
           </nav>
-          <div class="busca">
-            <label for="txtBusca"><img width="25px" height="20px" src="img/lupa.png" id="btnBusca" alt="Buscar"/></label>
-		        <input type="text" id="txtBusca" name="txtBusca" placeholder="Buscar..."/>    
-          </div>
         </div> 
       </div>   
     </header>
     <main>
-
-
       <section class="primeira" id="home">
         <div class="centralizar">
-          <div class="fachada">
-            <input type="radio" name="carousel" id="carousel1" checked="checked" />
-            <input type="radio" name="carousel" id="carousel2" />
-            <input type="radio" name="carousel" id="carousel3" />
-            <input type="radio" name="carousel" id="carousel4" />
-
-            <div class="carousel__stage">
-              <aside class="carousel__item">
-                <img class="carousel__image" src="img/carro1.PNG" />
-                <label for="carousel2" class="carousel__next carousel__control"></label>
-              </aside>
-
-              <aside class="carousel__item">
-                <label for="carousel1" class="carousel__prev carousel__control"></label>
-                <img class="carousel__image" src="img/carro2.PNG" />
-                <label for="carousel3" class="carousel__next carousel__control"></label>
-              </aside>
-
-              <aside class="carousel__item">
-                <label for="carousel2" class="carousel__prev carousel__control"></label>
-                <img class="carousel__image" src="img/carro3.PNG" />
-                <label for="carousel4" class="carousel__next carousel__control"></label>
-              </aside>
-
-              <aside class="carousel__item">
-                <label for="carousel3" class="carousel__prev carousel__control"></label>
-                <img class="carousel__image" src="img/carro4.PNG" />
-              </aside>
-
-            </div>
-          </div>
+          <div class="fachada"></div>
         </div>
       </section>
-
-
-
-
-      <article id="acomod">
+      <article  id="acomod">
         <div class="centralizar">
-
           <div class="titulo1">Nossos Passeios</div>
-
-
-          <div class="imagensprincipal">
-
-
-          <div class="card">
-
-
+          
+            <div class="imagensprincipal">
             <div class="imgs"><img src="img/rio-de-janeiro-809756_1920.jpg"></div>
-
-
-           <div class="content">
-
-              <h3>Legenda</h3>
-
-              <p>Descrição</p>
-
-              
-
-           </div>
-
-          </div>
-
-
-
-          <div class="card">
-
             <div class="imgs"><img src="img/Pedra_do_Telegrafo.jpg"></div>
-
-
-            <div class="content">
-
-              <h3>Legenda</h3>
-
-              <p>Descrição</p>
-
-            
-
-           </div>
-
-          </div>
-
-
-
-          <div class="card">
-
             <div class="imgs"><img src="img/Asa_Delta.jpg"></div>
-
-
-            <div class="content">
-
-              <h3>Legenda</h3>
-
-              <p>Descrição</p>
-
-            
-
-           </div>
-
           </div>
-
-
-
-          </div>
-
-
           <div class="imagensprincipal">
-
-            <div class="card">
-
             <div class="imgs"><img src="img/Buzios.jpg"></div>
-              
-            <div class="content">
-
-              <h3>Legenda</h3>
-
-              <p>Descrição</p>
-
-           </div>
-
-           </div>
-
-
-
-           <div class="card">
-
             <div class="imgs"><img src="img/Arraial do Cabo.jpg"></div>
-
-            <div class="content">
-
-              <h3>Legenda</h3>
-
-              <p>Descrição</p>
-
-           </div>
-
-           </div>
-
-
-
-           <div class="card">
-
-            <div class="imgs"><img src="img/Asa_Delta.jpg"></div>
-
-            <div class="content">
-
-              <h3>Legenda</h3>
-
-              <p>Descrição</p>
-
-           </div>
-
-           </div>
-
-
+            <div class="imgs"><img src="img/Aquario.jpg"></div>
           </div>
-
-
-
         </div>
       </article>
       <article class="secaofora">
         <div class="centralizar">
           <div class="secao">
-            <div class="imagemsecao"><img src="img/sunset.jpg"></div>
+            <div class="imagemsecaohome"><img src="img/transferhome.jpg"></div>
             <div class="texto-secao">
-              <h1 id="qs">Quem Somos</h1>
-              <p>Somos inspirados pelo nosso desejo de aproveitar a imensidão do mundo, de criar memórias por lugares diferentes, mapear vivências diversas e pela necessidade de colocarmos nossa energia em algo que acreditamos que vá fazer diferença de verdade em sua vida.</p>
-              </div>
+              <h1 id="epv">Transfer</h1>
+              <p id="txttransfer">Entenda o que é transfer, como funciona este serviço e quais as vantagens de contratá-lo:
+                 Transfer é uma das forma mais seguras de você realizar o traslado do aeroporto até o resort e do resort para o aeroporto.<br>
+                 Sou + Rio é uma empresa credenciadas pelo Ministério do Turismo, prestamos este serviço buscando o passageiro no horário combinado.<br>
+                 O serviço de transfer é dividido em três categorias principais: in, out e in/out.<br>
+
+                O que é transfer in, out e in/out?<br>
+                
+                - <strong>Transfer in:</strong> é responsável por realizar o trajeto do aeroporto até o resort/hotel;<br>
+                - <strong>Transfer out:</strong> é responsável por realizar o trajeto do resort até o aeroporto/hotel;<br>
+                - <strong>Transfer in/out:</strong> é responsável por realizar o trajeto do aeroporto até o resort e do resort até o aeroporto, ou seja, ida e volta.</p>
+            </div>
+            
           </div>  
         </div>
-      </article>
+      </article>      
       <article class="secao2">
         <div class="centralizar">
           <div class="secao">
             <div class="texto-secao">
               <h1 id="epv">Espaço para festas</h1>
-              <p>Este espaço fica dentro do prório Hotel, interligado ao restaurante e com fácil acesso através dos
-                elevadores. Uma excelente área para a realização do seu evento, com capacidade máxima para 200 pessoas.
-              </p>
-              <p>Aqui você encontra a estrutura completa para realizar seu evento. Garanta conforto, segurança,
-                tecnologia, ótima gastronomia e profissionais capacitados para atingir seus objetivos.</p>
+              <p>Este espaço fica dentro do prório Hotel, interligado ao restaurante e com fácil acesso através dos elevadores. Uma excelente área para a realização do seu evento, com capacidade máxima para 200 pessoas.</p>
+              <p>Aqui você encontra a estrutura completa para realizar seu evento. Garanta conforto, segurança, tecnologia, ótima gastronomia e profissionais capacitados para atingir seus objetivos.</p>
             </div>
             <div class="imagemsecao"><img src="img/auditorio.jpg"></div>
-          </div>
+          </div>  
         </div>
       </article>
     </main>
@@ -232,7 +88,6 @@
         </div>
       </div>
     </footer>
-  </div>
+  </div> 
 </body>
-
 </html>
