@@ -469,3 +469,106 @@ article.secao2{
     margin: 0 0 0 15px;
   }
 }  
+
+/* footer */
+footer{
+  width: 100%;
+  background: rgb(255,165,0);
+  background: linear-gradient(90deg, rgba(255,165,0,1) 40%, rgba(255,188,64,1) 78%);
+  /* margin: 10px; */
+}
+
+
+
+.footerimglogo{
+  border-radius: 5px 10px 5px 10px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: -35px;
+ 
+  }
+
+
+.redeimg{
+  /* align-items: center; */
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+
+
+} 
+
+
+ .redes{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 20px;
+ margin-top: 500px; 
+}
+
+
+.textofoot{
+text-align: center;
+text-decoration: none;
+font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+padding: 20px;
+} 
+
+.foo {
+  margin-left: 700px;
+  list-style: none;
+  float: left;
+  position: relative;    
+  top: 0;
+ 
+  
+}
+
+.foo li{
+  position: relative;
+  float:left;
+ 
+}
+
+.foo li a{
+  color: fff;
+  text-decoration: none;
+  padding: 2px 5px;
+  font-size: 15px;
+  display: block;
+  
+}
+
+.foo li a:hover {
+  color: #333535;
+
+}
+
+.foo li ul{
+  position: absolute;
+  top:-40px;
+  left: 0;
+  display: none;
+}
+
+.foo li:hover ul,
+.foo li.over ul {
+  display: block;
+}
+
+.foo li ul li{
+
+  display: block;
+  width: 600px;
+}
+
+.textofoot1{
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 20px;
+  } 
