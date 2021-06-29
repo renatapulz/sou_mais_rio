@@ -255,6 +255,10 @@ footer .midias ul li {
   margin-left: 10px;
 }
 
+footer .midias a:hover{
+  color: #333535;
+}
+
 footer .midias h3 {
   font-size: 19px;
   color: #FFF;
@@ -284,11 +288,22 @@ footer .links ul li {
 footer .links h3 {
   font-size: 19px;
   color: #FFF;
+  margin-left: 180px;
   margin-bottom: 20px;
 }
 
+footer .links a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer .links a:hover{
+  color: #333535;
+}
+
 footer .links ul li:first-child {
-  margin-left: 0;
+  margin-left: 180px;
+ 
 }
 
 

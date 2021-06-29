@@ -692,6 +692,8 @@ article.secao2{
 }  
 
 /* footer */
+/* footer */
+/* footer */
 footer {
   background: rgb(255,165,0);
   background: linear-gradient(90deg, rgba(255,165,0,1) 40%, rgba(255,188,64,1) 78%);
@@ -725,6 +727,10 @@ footer .midias ul li {
   margin-left: 10px;
 }
 
+footer .midias a:hover{
+  color: #333535;
+}
+
 footer .midias h3 {
   font-size: 19px;
   color: #FFF;
@@ -754,11 +760,22 @@ footer .links ul li {
 footer .links h3 {
   font-size: 19px;
   color: #FFF;
+  margin-left: 180px;
   margin-bottom: 20px;
 }
 
+footer .links a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+footer .links a:hover{
+  color: #333535;
+}
+
 footer .links ul li:first-child {
-  margin-left: 0;
+  margin-left: 180px;
+ 
 }
 
 
@@ -789,7 +806,7 @@ footer .copyright {
   font-size: 17px;
   margin-top: 30px;
   padding: 20px 0;
-  
+
 }
 
 @media(max-width: 1200px) {
